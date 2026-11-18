@@ -1,0 +1,183 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pkg: <http://example.org/pesticide-kg#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pkg: a owl:Ontology .
+
+pkg:2_4_D_dimethylamine_salt a pkg:ChemicalEntity,
+        owl:NamedIndividual ;
+    rdfs:label "2,4-D dimethylamine salt" ;
+    pkg:casNumber "2008-39-1" ;
+    pkg:inchiKey "IUQJDHJVPLLKFL-UHFFFAOYSA-N" ;
+    pkg:isSaltOf pkg:2_4_D ;
+    pkg:molecularFormula "C10H13Cl2NO3" ;
+    pkg:pubchemCID "16180" ;
+    rdfs:comment "Common salt form of 2,4-D" .
+
+pkg:AMPA a pkg:ChemicalEntity,
+        owl:NamedIndividual ;
+    rdfs:label "AMPA" ;
+    pkg:casNumber "1066-51-9" ;
+    pkg:inchiKey "MGRVRXRGTBOSHW-UHFFFAOYSA-N" ;
+    pkg:isMetaboliteOf pkg:Glyphosate ;
+    pkg:molecularFormula "CH6NO3P" ;
+    pkg:pubchemCID "14017" ;
+    rdfs:comment "Main soil and plant metabolite of glyphosate" .
+
+pkg:MCPA_thioethyl a pkg:ChemicalEntity,
+        owl:NamedIndividual ;
+    rdfs:label "MCPA-thioethyl" ;
+    pkg:casNumber "25319-90-8" ;
+    pkg:inchiKey "AZFKQCNGMSSWDS-UHFFFAOYSA-N" ;
+    pkg:isEsterOf pkg:MCPA ;
+    pkg:molecularFormula "C11H13ClO2S" ;
+    pkg:pubchemCID "32876" ;
+    rdfs:comment "EU database remark lists both CAS numbers; PubChem: S-ethyl thioester of MCPA" .
+
+pkg:TCP_3_5_6_trichloro_2_pyridinol a pkg:ChemicalEntity,
+        owl:NamedIndividual ;
+    rdfs:label "TCP (3,5,6-trichloro-2-pyridinol)" ;
+    pkg:casNumber "6515-38-4" ;
+    pkg:inchiKey "WCYYAQFQZQEUEN-UHFFFAOYSA-N" ;
+    pkg:isMetaboliteOf pkg:Chlorpyrifos ;
+    pkg:molecularFormula "C5H2Cl3NO" ;
+    pkg:pubchemCID "23017" ;
+    rdfs:comment "Hydrolysis product of chlorpyrifos" .
+
+pkg:THPI_tetrahydrophthalimide a pkg:ChemicalEntity,
+        owl:NamedIndividual ;
+    rdfs:label "THPI (tetrahydrophthalimide)" ;
+    pkg:casNumber "85-40-5" ;
+    pkg:inchiKey "CIFFBTOJCKSRJY-UHFFFAOYSA-N" ;
+    pkg:isMetaboliteOf pkg:Captan ;
+    pkg:molecularFormula "C8H9NO2" ;
+    pkg:pubchemCID "6808" ;
+    rdfs:comment "Main degradation product of captan" .
+
+pkg:adi a owl:DatatypeProperty .
+
+pkg:approvalDate a owl:DatatypeProperty .
+
+pkg:approvalStatus a owl:DatatypeProperty .
+
+pkg:arfd a owl:DatatypeProperty .
+
+pkg:casNumber a owl:DatatypeProperty .
+
+pkg:euFunction a owl:DatatypeProperty .
+
+pkg:expiryDate a owl:DatatypeProperty .
+
+pkg:inchiKey a owl:DatatypeProperty .
+
+pkg:isEsterOf a owl:ObjectProperty ;
+    rdfs:domain pkg:Ester ;
+    rdfs:range pkg:ActiveSubstance ;
+    rdfs:subPropertyOf pkg:isFormOf .
+
+pkg:isMetaboliteOf a owl:ObjectProperty ;
+    rdfs:domain pkg:Metabolite ;
+    rdfs:range pkg:ActiveSubstance ;
+    rdfs:subPropertyOf pkg:isFormOf .
+
+pkg:isSaltOf a owl:ObjectProperty ;
+    rdfs:domain pkg:Salt ;
+    rdfs:range pkg:ActiveSubstance ;
+    rdfs:subPropertyOf pkg:isFormOf .
+
+pkg:molecularFormula a owl:DatatypeProperty .
+
+pkg:pubchemCID a owl:DatatypeProperty .
+
+pkg:Ester a owl:Class ;
+    rdfs:subClassOf pkg:ChemicalEntity .
+
+pkg:Metabolite a owl:Class ;
+    rdfs:subClassOf pkg:ChemicalEntity .
+
+pkg:Salt a owl:Class ;
+    rdfs:subClassOf pkg:ChemicalEntity .
+
+pkg:hasDenominator a owl:ObjectProperty .
+
+pkg:2_4_D a pkg:ActiveSubstance,
+        owl:NamedIndividual ;
+    rdfs:label "2,4-D" ;
+    pkg:adi 0.02 ;
+    pkg:approvalDate "2016-01-01"^^xsd:date ;
+    pkg:approvalStatus "Approved" ;
+    pkg:arfd 0.3 ;
+    pkg:casNumber "94-75-7" ;
+    pkg:euFunction "HB,PG" ;
+    pkg:expiryDate "2030-12-31"^^xsd:date ;
+    pkg:hasDenominator pkg:2_4_D ;
+    pkg:inchiKey "OVSKIKFHRZPJSS-UHFFFAOYSA-N" ;
+    pkg:molecularFormula "C8H6Cl2O3" ;
+    pkg:pubchemCID "1486" .
+
+pkg:Captan a pkg:ActiveSubstance,
+        owl:NamedIndividual ;
+    rdfs:label "Captan" ;
+    pkg:adi 0.25 ;
+    pkg:approvalDate "2024-11-01"^^xsd:date ;
+    pkg:approvalStatus "Approved" ;
+    pkg:arfd 0.9 ;
+    pkg:casNumber "133-06-2" ;
+    pkg:expiryDate "2039-10-31"^^xsd:date ;
+    pkg:hasDenominator pkg:Captan ;
+    pkg:inchiKey "LDVVMCZRFWMZSG-UHFFFAOYSA-N" ;
+    pkg:molecularFormula "C9H8Cl3NO2S" ;
+    pkg:pubchemCID "8606" .
+
+pkg:Chlorpyrifos a pkg:ActiveSubstance,
+        owl:NamedIndividual ;
+    rdfs:label "Chlorpyrifos" ;
+    pkg:approvalDate "2006-07-01"^^xsd:date ;
+    pkg:approvalStatus "Not approved" ;
+    pkg:casNumber "2921-88-2" ;
+    pkg:euFunction "AC,IN" ;
+    pkg:expiryDate "2020-01-16"^^xsd:date ;
+    pkg:hasDenominator pkg:Chlorpyrifos ;
+    pkg:inchiKey "SBPBAQFWLVIOKP-UHFFFAOYSA-N" ;
+    pkg:molecularFormula "C9H11Cl3NO3PS" ;
+    pkg:pubchemCID "2730" .
+
+pkg:Glyphosate a pkg:ActiveSubstance,
+        owl:NamedIndividual ;
+    rdfs:label "Glyphosate" ;
+    pkg:adi 0.5 ;
+    pkg:approvalDate "2023-12-16"^^xsd:date ;
+    pkg:approvalStatus "Approved" ;
+    pkg:arfd 1.5 ;
+    pkg:casNumber "1071-83-6" ;
+    pkg:euFunction "HB" ;
+    pkg:expiryDate "2033-12-15"^^xsd:date ;
+    pkg:hasDenominator pkg:Glyphosate ;
+    pkg:inchiKey "XDDAORKBJWWYJS-UHFFFAOYSA-N" ;
+    pkg:molecularFormula "C3H8NO5P" ;
+    pkg:pubchemCID "3496" .
+
+pkg:MCPA a pkg:ActiveSubstance,
+        owl:NamedIndividual ;
+    rdfs:label "MCPA" ;
+    pkg:adi 0.05 ;
+    pkg:approvalDate "2006-05-01"^^xsd:date ;
+    pkg:approvalStatus "Approved" ;
+    pkg:arfd 0.15 ;
+    pkg:casNumber "94-74-6" ;
+    pkg:euFunction "HB" ;
+    pkg:expiryDate "2028-07-31"^^xsd:date ;
+    pkg:hasDenominator pkg:MCPA ;
+    pkg:inchiKey "WHKUVVPPKQRRBV-UHFFFAOYSA-N" ;
+    pkg:molecularFormula "C9H9ClO3" ;
+    pkg:pubchemCID "7204" .
+
+pkg:isFormOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf pkg:hasDenominator .
+
+pkg:ActiveSubstance a owl:Class ;
+    rdfs:subClassOf pkg:ChemicalEntity .
+
+pkg:ChemicalEntity a owl:Class .
+

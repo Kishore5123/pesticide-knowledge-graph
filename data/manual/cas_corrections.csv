@@ -1,0 +1,4 @@
+name,cas_raw,cas_corrected,reason
+Carvone,244-16-8,2244-16-8,"Leading digit missing; 2244-16-8 is (S)-carvone and passes the check digit"
+Fuberidazole,878-19-1,3878-19-1,"Leading digit missing; 3878-19-1 passes the check digit"
+Paraffin oil/(CAS 64742-54-7),64741-54-7,64742-54-7,"CAS column disagrees with the CAS in the substance name; only 64742-54-7 passes the check digit"

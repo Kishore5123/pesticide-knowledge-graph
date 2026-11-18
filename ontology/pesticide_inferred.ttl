@@ -1,0 +1,660 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pkg: <http://example.org/pesticide-kg#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pkg: a owl:Ontology ;
+    owl:sameAs pkg: .
+
+pkg:2_4_D_dimethylamine_salt a pkg:ChemicalEntity,
+        pkg:Salt,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "2,4-D dimethylamine salt" ;
+    pkg:casNumber "2008-39-1" ;
+    pkg:hasDenominator pkg:2_4_D ;
+    pkg:inchiKey "IUQJDHJVPLLKFL-UHFFFAOYSA-N" ;
+    pkg:isFormOf pkg:2_4_D ;
+    pkg:isSaltOf pkg:2_4_D ;
+    pkg:molecularFormula "C10H13Cl2NO3" ;
+    pkg:pubchemCID "16180" ;
+    rdfs:comment "Common salt form of 2,4-D" ;
+    owl:sameAs pkg:2_4_D_dimethylamine_salt .
+
+pkg:AMPA a pkg:ChemicalEntity,
+        pkg:Metabolite,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "AMPA" ;
+    pkg:casNumber "1066-51-9" ;
+    pkg:hasDenominator pkg:Glyphosate ;
+    pkg:inchiKey "MGRVRXRGTBOSHW-UHFFFAOYSA-N" ;
+    pkg:isFormOf pkg:Glyphosate ;
+    pkg:isMetaboliteOf pkg:Glyphosate ;
+    pkg:molecularFormula "CH6NO3P" ;
+    pkg:pubchemCID "14017" ;
+    rdfs:comment "Main soil and plant metabolite of glyphosate" ;
+    owl:sameAs pkg:AMPA .
+
+pkg:MCPA_thioethyl a pkg:ChemicalEntity,
+        pkg:Ester,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "MCPA-thioethyl" ;
+    pkg:casNumber "25319-90-8" ;
+    pkg:hasDenominator pkg:MCPA ;
+    pkg:inchiKey "AZFKQCNGMSSWDS-UHFFFAOYSA-N" ;
+    pkg:isEsterOf pkg:MCPA ;
+    pkg:isFormOf pkg:MCPA ;
+    pkg:molecularFormula "C11H13ClO2S" ;
+    pkg:pubchemCID "32876" ;
+    rdfs:comment "EU database remark lists both CAS numbers; PubChem: S-ethyl thioester of MCPA" ;
+    owl:sameAs pkg:MCPA_thioethyl .
+
+pkg:TCP_3_5_6_trichloro_2_pyridinol a pkg:ChemicalEntity,
+        pkg:Metabolite,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "TCP (3,5,6-trichloro-2-pyridinol)" ;
+    pkg:casNumber "6515-38-4" ;
+    pkg:hasDenominator pkg:Chlorpyrifos ;
+    pkg:inchiKey "WCYYAQFQZQEUEN-UHFFFAOYSA-N" ;
+    pkg:isFormOf pkg:Chlorpyrifos ;
+    pkg:isMetaboliteOf pkg:Chlorpyrifos ;
+    pkg:molecularFormula "C5H2Cl3NO" ;
+    pkg:pubchemCID "23017" ;
+    rdfs:comment "Hydrolysis product of chlorpyrifos" ;
+    owl:sameAs pkg:TCP_3_5_6_trichloro_2_pyridinol .
+
+pkg:THPI_tetrahydrophthalimide a pkg:ChemicalEntity,
+        pkg:Metabolite,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "THPI (tetrahydrophthalimide)" ;
+    pkg:casNumber "85-40-5" ;
+    pkg:hasDenominator pkg:Captan ;
+    pkg:inchiKey "CIFFBTOJCKSRJY-UHFFFAOYSA-N" ;
+    pkg:isFormOf pkg:Captan ;
+    pkg:isMetaboliteOf pkg:Captan ;
+    pkg:molecularFormula "C8H9NO2" ;
+    pkg:pubchemCID "6808" ;
+    rdfs:comment "Main degradation product of captan" ;
+    owl:sameAs pkg:THPI_tetrahydrophthalimide .
+
+rdf:HTML a rdfs:Datatype ;
+    owl:sameAs rdf:HTML .
+
+rdf:PlainLiteral a rdfs:Datatype ;
+    owl:sameAs rdf:PlainLiteral .
+
+rdf:XMLLiteral a rdfs:Datatype ;
+    owl:sameAs rdf:XMLLiteral .
+
+rdf:langString a rdfs:Datatype ;
+    owl:sameAs rdf:langString .
+
+rdf:type owl:sameAs rdf:type .
+
+rdfs:Literal a rdfs:Datatype ;
+    owl:sameAs rdfs:Literal .
+
+rdfs:comment a owl:AnnotationProperty ;
+    owl:sameAs rdfs:comment .
+
+rdfs:domain owl:sameAs rdfs:domain .
+
+rdfs:isDefinedBy a owl:AnnotationProperty ;
+    owl:sameAs rdfs:isDefinedBy .
+
+rdfs:label a owl:AnnotationProperty ;
+    owl:sameAs rdfs:label .
+
+rdfs:range owl:sameAs rdfs:range .
+
+rdfs:seeAlso a owl:AnnotationProperty ;
+    owl:sameAs rdfs:seeAlso .
+
+rdfs:subClassOf owl:sameAs rdfs:subClassOf .
+
+rdfs:subPropertyOf owl:sameAs rdfs:subPropertyOf .
+
+xsd:NCName a rdfs:Datatype ;
+    owl:sameAs xsd:NCName .
+
+xsd:NMTOKEN a rdfs:Datatype ;
+    owl:sameAs xsd:NMTOKEN .
+
+xsd:Name a rdfs:Datatype ;
+    owl:sameAs xsd:Name .
+
+xsd:anyURI a rdfs:Datatype ;
+    owl:sameAs xsd:anyURI .
+
+xsd:base64Binary a rdfs:Datatype ;
+    owl:sameAs xsd:base64Binary .
+
+xsd:boolean a rdfs:Datatype ;
+    owl:sameAs xsd:boolean .
+
+xsd:byte a rdfs:Datatype ;
+    owl:sameAs xsd:byte .
+
+xsd:dateTime a rdfs:Datatype ;
+    owl:sameAs xsd:dateTime .
+
+xsd:dateTimeStamp a rdfs:Datatype ;
+    owl:sameAs xsd:dateTimeStamp .
+
+xsd:double a rdfs:Datatype ;
+    owl:sameAs xsd:double .
+
+xsd:float a rdfs:Datatype ;
+    owl:sameAs xsd:float .
+
+xsd:hexBinary a rdfs:Datatype ;
+    owl:sameAs xsd:hexBinary .
+
+xsd:int a rdfs:Datatype ;
+    owl:sameAs xsd:int .
+
+xsd:integer a rdfs:Datatype ;
+    owl:sameAs xsd:integer .
+
+xsd:language a rdfs:Datatype ;
+    owl:sameAs xsd:language .
+
+xsd:long a rdfs:Datatype ;
+    owl:sameAs xsd:long .
+
+xsd:negativeInteger a rdfs:Datatype ;
+    owl:sameAs xsd:negativeInteger .
+
+xsd:nonNegativeInteger a rdfs:Datatype ;
+    owl:sameAs xsd:nonNegativeInteger .
+
+xsd:nonPositiveInteger a rdfs:Datatype ;
+    owl:sameAs xsd:nonPositiveInteger .
+
+xsd:normalizedString a rdfs:Datatype ;
+    owl:sameAs xsd:normalizedString .
+
+xsd:positiveInteger a rdfs:Datatype ;
+    owl:sameAs xsd:positiveInteger .
+
+xsd:short a rdfs:Datatype ;
+    owl:sameAs xsd:short .
+
+xsd:string a rdfs:Datatype ;
+    owl:sameAs xsd:string .
+
+xsd:time a rdfs:Datatype ;
+    owl:sameAs xsd:time .
+
+xsd:token a rdfs:Datatype ;
+    owl:sameAs xsd:token .
+
+xsd:unsignedByte a rdfs:Datatype ;
+    owl:sameAs xsd:unsignedByte .
+
+xsd:unsignedInt a rdfs:Datatype ;
+    owl:sameAs xsd:unsignedInt .
+
+xsd:unsignedLong a rdfs:Datatype ;
+    owl:sameAs xsd:unsignedLong .
+
+xsd:unsignedShort a rdfs:Datatype ;
+    owl:sameAs xsd:unsignedShort .
+
+owl:backwardCompatibleWith a owl:AnnotationProperty ;
+    owl:sameAs owl:backwardCompatibleWith .
+
+owl:deprecated a owl:AnnotationProperty ;
+    owl:sameAs owl:deprecated .
+
+owl:equivalentClass owl:sameAs owl:equivalentClass .
+
+owl:equivalentProperty owl:sameAs owl:equivalentProperty .
+
+owl:incompatibleWith a owl:AnnotationProperty ;
+    owl:sameAs owl:incompatibleWith .
+
+owl:priorVersion a owl:AnnotationProperty ;
+    owl:sameAs owl:priorVersion .
+
+owl:sameAs owl:sameAs owl:sameAs .
+
+owl:versionInfo a owl:AnnotationProperty ;
+    owl:sameAs owl:versionInfo .
+
+owl:Ontology owl:sameAs owl:Ontology .
+
+"2006-05-01"^^xsd:date a xsd:date ;
+    owl:sameAs "2006-05-01"^^xsd:date .
+
+"2006-07-01"^^xsd:date a xsd:date ;
+    owl:sameAs "2006-07-01"^^xsd:date .
+
+"2016-01-01"^^xsd:date a xsd:date ;
+    owl:sameAs "2016-01-01"^^xsd:date .
+
+"2020-01-16"^^xsd:date a xsd:date ;
+    owl:sameAs "2020-01-16"^^xsd:date .
+
+"2023-12-16"^^xsd:date a xsd:date ;
+    owl:sameAs "2023-12-16"^^xsd:date .
+
+"2024-11-01"^^xsd:date a xsd:date ;
+    owl:sameAs "2024-11-01"^^xsd:date .
+
+"2028-07-31"^^xsd:date a xsd:date ;
+    owl:sameAs "2028-07-31"^^xsd:date .
+
+"2030-12-31"^^xsd:date a xsd:date ;
+    owl:sameAs "2030-12-31"^^xsd:date .
+
+"2033-12-15"^^xsd:date a xsd:date ;
+    owl:sameAs "2033-12-15"^^xsd:date .
+
+"2039-10-31"^^xsd:date a xsd:date ;
+    owl:sameAs "2039-10-31"^^xsd:date .
+
+0.02 a xsd:decimal ;
+    owl:sameAs 0.02 .
+
+0.05 a xsd:decimal ;
+    owl:sameAs 0.05 .
+
+0.15 a xsd:decimal ;
+    owl:sameAs 0.15 .
+
+0.25 a xsd:decimal ;
+    owl:sameAs 0.25 .
+
+0.3 a xsd:decimal ;
+    owl:sameAs 0.3 .
+
+0.5 a xsd:decimal ;
+    owl:sameAs 0.5 .
+
+0.9 a xsd:decimal ;
+    owl:sameAs 0.9 .
+
+1.5 a xsd:decimal ;
+    owl:sameAs 1.5 .
+
+"1066-51-9" owl:sameAs "1066-51-9" .
+
+"1071-83-6" owl:sameAs "1071-83-6" .
+
+"133-06-2" owl:sameAs "133-06-2" .
+
+"14017" owl:sameAs "14017" .
+
+"1486" owl:sameAs "1486" .
+
+"16180" owl:sameAs "16180" .
+
+"2,4-D" owl:sameAs "2,4-D" .
+
+"2,4-D dimethylamine salt" owl:sameAs "2,4-D dimethylamine salt" .
+
+"2008-39-1" owl:sameAs "2008-39-1" .
+
+"23017" owl:sameAs "23017" .
+
+"25319-90-8" owl:sameAs "25319-90-8" .
+
+"2730" owl:sameAs "2730" .
+
+"2921-88-2" owl:sameAs "2921-88-2" .
+
+"32876" owl:sameAs "32876" .
+
+"3496" owl:sameAs "3496" .
+
+"6515-38-4" owl:sameAs "6515-38-4" .
+
+"6808" owl:sameAs "6808" .
+
+"7204" owl:sameAs "7204" .
+
+"85-40-5" owl:sameAs "85-40-5" .
+
+"8606" owl:sameAs "8606" .
+
+"94-74-6" owl:sameAs "94-74-6" .
+
+"94-75-7" owl:sameAs "94-75-7" .
+
+"AC,IN" owl:sameAs "AC,IN" .
+
+"AMPA" owl:sameAs "AMPA" .
+
+"AZFKQCNGMSSWDS-UHFFFAOYSA-N" owl:sameAs "AZFKQCNGMSSWDS-UHFFFAOYSA-N" .
+
+"C10H13Cl2NO3" owl:sameAs "C10H13Cl2NO3" .
+
+"C11H13ClO2S" owl:sameAs "C11H13ClO2S" .
+
+"C3H8NO5P" owl:sameAs "C3H8NO5P" .
+
+"C5H2Cl3NO" owl:sameAs "C5H2Cl3NO" .
+
+"C8H6Cl2O3" owl:sameAs "C8H6Cl2O3" .
+
+"C8H9NO2" owl:sameAs "C8H9NO2" .
+
+"C9H11Cl3NO3PS" owl:sameAs "C9H11Cl3NO3PS" .
+
+"C9H8Cl3NO2S" owl:sameAs "C9H8Cl3NO2S" .
+
+"C9H9ClO3" owl:sameAs "C9H9ClO3" .
+
+"CH6NO3P" owl:sameAs "CH6NO3P" .
+
+"CIFFBTOJCKSRJY-UHFFFAOYSA-N" owl:sameAs "CIFFBTOJCKSRJY-UHFFFAOYSA-N" .
+
+"Captan" owl:sameAs "Captan" .
+
+"Chlorpyrifos" owl:sameAs "Chlorpyrifos" .
+
+"Common salt form of 2,4-D" owl:sameAs "Common salt form of 2,4-D" .
+
+"EU database remark lists both CAS numbers; PubChem: S-ethyl thioester of MCPA" owl:sameAs "EU database remark lists both CAS numbers; PubChem: S-ethyl thioester of MCPA" .
+
+"Glyphosate" owl:sameAs "Glyphosate" .
+
+"HB,PG" owl:sameAs "HB,PG" .
+
+"Hydrolysis product of chlorpyrifos" owl:sameAs "Hydrolysis product of chlorpyrifos" .
+
+"IUQJDHJVPLLKFL-UHFFFAOYSA-N" owl:sameAs "IUQJDHJVPLLKFL-UHFFFAOYSA-N" .
+
+"LDVVMCZRFWMZSG-UHFFFAOYSA-N" owl:sameAs "LDVVMCZRFWMZSG-UHFFFAOYSA-N" .
+
+"MCPA" owl:sameAs "MCPA" .
+
+"MCPA-thioethyl" owl:sameAs "MCPA-thioethyl" .
+
+"MGRVRXRGTBOSHW-UHFFFAOYSA-N" owl:sameAs "MGRVRXRGTBOSHW-UHFFFAOYSA-N" .
+
+"Main degradation product of captan" owl:sameAs "Main degradation product of captan" .
+
+"Main soil and plant metabolite of glyphosate" owl:sameAs "Main soil and plant metabolite of glyphosate" .
+
+"Not approved" owl:sameAs "Not approved" .
+
+"OVSKIKFHRZPJSS-UHFFFAOYSA-N" owl:sameAs "OVSKIKFHRZPJSS-UHFFFAOYSA-N" .
+
+"SBPBAQFWLVIOKP-UHFFFAOYSA-N" owl:sameAs "SBPBAQFWLVIOKP-UHFFFAOYSA-N" .
+
+"TCP (3,5,6-trichloro-2-pyridinol)" owl:sameAs "TCP (3,5,6-trichloro-2-pyridinol)" .
+
+"THPI (tetrahydrophthalimide)" owl:sameAs "THPI (tetrahydrophthalimide)" .
+
+"WCYYAQFQZQEUEN-UHFFFAOYSA-N" owl:sameAs "WCYYAQFQZQEUEN-UHFFFAOYSA-N" .
+
+"WHKUVVPPKQRRBV-UHFFFAOYSA-N" owl:sameAs "WHKUVVPPKQRRBV-UHFFFAOYSA-N" .
+
+"XDDAORKBJWWYJS-UHFFFAOYSA-N" owl:sameAs "XDDAORKBJWWYJS-UHFFFAOYSA-N" .
+
+pkg:adi a owl:DatatypeProperty ;
+    rdfs:subPropertyOf pkg:adi ;
+    owl:equivalentProperty pkg:adi ;
+    owl:sameAs pkg:adi .
+
+pkg:approvalDate a owl:DatatypeProperty ;
+    rdfs:subPropertyOf pkg:approvalDate ;
+    owl:equivalentProperty pkg:approvalDate ;
+    owl:sameAs pkg:approvalDate .
+
+pkg:approvalStatus a owl:DatatypeProperty ;
+    rdfs:subPropertyOf pkg:approvalStatus ;
+    owl:equivalentProperty pkg:approvalStatus ;
+    owl:sameAs pkg:approvalStatus .
+
+pkg:arfd a owl:DatatypeProperty ;
+    rdfs:subPropertyOf pkg:arfd ;
+    owl:equivalentProperty pkg:arfd ;
+    owl:sameAs pkg:arfd .
+
+pkg:casNumber a owl:DatatypeProperty ;
+    rdfs:subPropertyOf pkg:casNumber ;
+    owl:equivalentProperty pkg:casNumber ;
+    owl:sameAs pkg:casNumber .
+
+pkg:euFunction a owl:DatatypeProperty ;
+    rdfs:subPropertyOf pkg:euFunction ;
+    owl:equivalentProperty pkg:euFunction ;
+    owl:sameAs pkg:euFunction .
+
+pkg:expiryDate a owl:DatatypeProperty ;
+    rdfs:subPropertyOf pkg:expiryDate ;
+    owl:equivalentProperty pkg:expiryDate ;
+    owl:sameAs pkg:expiryDate .
+
+pkg:inchiKey a owl:DatatypeProperty ;
+    rdfs:subPropertyOf pkg:inchiKey ;
+    owl:equivalentProperty pkg:inchiKey ;
+    owl:sameAs pkg:inchiKey .
+
+pkg:isEsterOf a owl:ObjectProperty ;
+    rdfs:domain pkg:ChemicalEntity,
+        pkg:Ester,
+        owl:Thing ;
+    rdfs:range pkg:ActiveSubstance,
+        pkg:ChemicalEntity,
+        owl:Thing ;
+    rdfs:subPropertyOf pkg:hasDenominator,
+        pkg:isEsterOf,
+        pkg:isFormOf ;
+    owl:equivalentProperty pkg:isEsterOf ;
+    owl:sameAs pkg:isEsterOf .
+
+pkg:isMetaboliteOf a owl:ObjectProperty ;
+    rdfs:domain pkg:ChemicalEntity,
+        pkg:Metabolite,
+        owl:Thing ;
+    rdfs:range pkg:ActiveSubstance,
+        pkg:ChemicalEntity,
+        owl:Thing ;
+    rdfs:subPropertyOf pkg:hasDenominator,
+        pkg:isFormOf,
+        pkg:isMetaboliteOf ;
+    owl:equivalentProperty pkg:isMetaboliteOf ;
+    owl:sameAs pkg:isMetaboliteOf .
+
+pkg:isSaltOf a owl:ObjectProperty ;
+    rdfs:domain pkg:ChemicalEntity,
+        pkg:Salt,
+        owl:Thing ;
+    rdfs:range pkg:ActiveSubstance,
+        pkg:ChemicalEntity,
+        owl:Thing ;
+    rdfs:subPropertyOf pkg:hasDenominator,
+        pkg:isFormOf,
+        pkg:isSaltOf ;
+    owl:equivalentProperty pkg:isSaltOf ;
+    owl:sameAs pkg:isSaltOf .
+
+pkg:molecularFormula a owl:DatatypeProperty ;
+    rdfs:subPropertyOf pkg:molecularFormula ;
+    owl:equivalentProperty pkg:molecularFormula ;
+    owl:sameAs pkg:molecularFormula .
+
+pkg:pubchemCID a owl:DatatypeProperty ;
+    rdfs:subPropertyOf pkg:pubchemCID ;
+    owl:equivalentProperty pkg:pubchemCID ;
+    owl:sameAs pkg:pubchemCID .
+
+owl:Nothing a owl:Class ;
+    rdfs:subClassOf pkg:ActiveSubstance,
+        pkg:ChemicalEntity,
+        pkg:Ester,
+        pkg:Metabolite,
+        pkg:Salt,
+        owl:Nothing,
+        owl:Thing ;
+    owl:equivalentClass owl:Nothing ;
+    owl:sameAs owl:Nothing .
+
+"HB" owl:sameAs "HB" .
+
+pkg:2_4_D a pkg:ActiveSubstance,
+        pkg:ChemicalEntity,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "2,4-D" ;
+    pkg:adi 0.02 ;
+    pkg:approvalDate "2016-01-01"^^xsd:date ;
+    pkg:approvalStatus "Approved" ;
+    pkg:arfd 0.3 ;
+    pkg:casNumber "94-75-7" ;
+    pkg:euFunction "HB,PG" ;
+    pkg:expiryDate "2030-12-31"^^xsd:date ;
+    pkg:hasDenominator pkg:2_4_D ;
+    pkg:inchiKey "OVSKIKFHRZPJSS-UHFFFAOYSA-N" ;
+    pkg:molecularFormula "C8H6Cl2O3" ;
+    pkg:pubchemCID "1486" ;
+    owl:sameAs pkg:2_4_D .
+
+pkg:Captan a pkg:ActiveSubstance,
+        pkg:ChemicalEntity,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Captan" ;
+    pkg:adi 0.25 ;
+    pkg:approvalDate "2024-11-01"^^xsd:date ;
+    pkg:approvalStatus "Approved" ;
+    pkg:arfd 0.9 ;
+    pkg:casNumber "133-06-2" ;
+    pkg:expiryDate "2039-10-31"^^xsd:date ;
+    pkg:hasDenominator pkg:Captan ;
+    pkg:inchiKey "LDVVMCZRFWMZSG-UHFFFAOYSA-N" ;
+    pkg:molecularFormula "C9H8Cl3NO2S" ;
+    pkg:pubchemCID "8606" ;
+    owl:sameAs pkg:Captan .
+
+pkg:Chlorpyrifos a pkg:ActiveSubstance,
+        pkg:ChemicalEntity,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Chlorpyrifos" ;
+    pkg:approvalDate "2006-07-01"^^xsd:date ;
+    pkg:approvalStatus "Not approved" ;
+    pkg:casNumber "2921-88-2" ;
+    pkg:euFunction "AC,IN" ;
+    pkg:expiryDate "2020-01-16"^^xsd:date ;
+    pkg:hasDenominator pkg:Chlorpyrifos ;
+    pkg:inchiKey "SBPBAQFWLVIOKP-UHFFFAOYSA-N" ;
+    pkg:molecularFormula "C9H11Cl3NO3PS" ;
+    pkg:pubchemCID "2730" ;
+    owl:sameAs pkg:Chlorpyrifos .
+
+pkg:Glyphosate a pkg:ActiveSubstance,
+        pkg:ChemicalEntity,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Glyphosate" ;
+    pkg:adi 0.5 ;
+    pkg:approvalDate "2023-12-16"^^xsd:date ;
+    pkg:approvalStatus "Approved" ;
+    pkg:arfd 1.5 ;
+    pkg:casNumber "1071-83-6" ;
+    pkg:euFunction "HB" ;
+    pkg:expiryDate "2033-12-15"^^xsd:date ;
+    pkg:hasDenominator pkg:Glyphosate ;
+    pkg:inchiKey "XDDAORKBJWWYJS-UHFFFAOYSA-N" ;
+    pkg:molecularFormula "C3H8NO5P" ;
+    pkg:pubchemCID "3496" ;
+    owl:sameAs pkg:Glyphosate .
+
+pkg:MCPA a pkg:ActiveSubstance,
+        pkg:ChemicalEntity,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "MCPA" ;
+    pkg:adi 0.05 ;
+    pkg:approvalDate "2006-05-01"^^xsd:date ;
+    pkg:approvalStatus "Approved" ;
+    pkg:arfd 0.15 ;
+    pkg:casNumber "94-74-6" ;
+    pkg:euFunction "HB" ;
+    pkg:expiryDate "2028-07-31"^^xsd:date ;
+    pkg:hasDenominator pkg:MCPA ;
+    pkg:inchiKey "WHKUVVPPKQRRBV-UHFFFAOYSA-N" ;
+    pkg:molecularFormula "C9H9ClO3" ;
+    pkg:pubchemCID "7204" ;
+    owl:sameAs pkg:MCPA .
+
+"Approved" owl:sameAs "Approved" .
+
+pkg:Ester a owl:Class ;
+    rdfs:subClassOf pkg:ChemicalEntity,
+        pkg:Ester,
+        owl:Thing ;
+    owl:equivalentClass pkg:Ester ;
+    owl:sameAs pkg:Ester .
+
+pkg:Salt a owl:Class ;
+    rdfs:subClassOf pkg:ChemicalEntity,
+        pkg:Salt,
+        owl:Thing ;
+    owl:equivalentClass pkg:Salt ;
+    owl:sameAs pkg:Salt .
+
+pkg:isFormOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf pkg:hasDenominator,
+        pkg:isFormOf ;
+    owl:equivalentProperty pkg:isFormOf ;
+    owl:sameAs pkg:isFormOf .
+
+owl:ObjectProperty owl:sameAs owl:ObjectProperty .
+
+pkg:hasDenominator a owl:ObjectProperty ;
+    rdfs:subPropertyOf pkg:hasDenominator ;
+    owl:equivalentProperty pkg:hasDenominator ;
+    owl:sameAs pkg:hasDenominator .
+
+pkg:Metabolite a owl:Class ;
+    rdfs:subClassOf pkg:ChemicalEntity,
+        pkg:Metabolite,
+        owl:Thing ;
+    owl:equivalentClass pkg:Metabolite ;
+    owl:sameAs pkg:Metabolite .
+
+owl:Class owl:sameAs owl:Class .
+
+xsd:decimal a rdfs:Datatype ;
+    owl:sameAs xsd:decimal .
+
+owl:AnnotationProperty owl:sameAs owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype ;
+    owl:sameAs xsd:date .
+
+owl:DatatypeProperty owl:sameAs owl:DatatypeProperty .
+
+owl:NamedIndividual owl:sameAs owl:NamedIndividual .
+
+pkg:ActiveSubstance a owl:Class ;
+    rdfs:subClassOf pkg:ActiveSubstance,
+        pkg:ChemicalEntity,
+        owl:Thing ;
+    owl:equivalentClass pkg:ActiveSubstance ;
+    owl:sameAs pkg:ActiveSubstance .
+
+pkg:ChemicalEntity a owl:Class ;
+    rdfs:subClassOf pkg:ChemicalEntity,
+        owl:Thing ;
+    owl:equivalentClass pkg:ChemicalEntity ;
+    owl:sameAs pkg:ChemicalEntity .
+
+owl:Thing a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    owl:equivalentClass owl:Thing ;
+    owl:sameAs owl:Thing .
+
+rdfs:Datatype owl:sameAs rdfs:Datatype .
+

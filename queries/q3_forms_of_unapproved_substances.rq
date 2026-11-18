@@ -1,0 +1,12 @@
+# Q3. Which salts, esters or metabolites belong to a substance that is NOT approved in the EU?
+# Proves: a risk flag that needs regulatory status + chemical relations together;
+#         the metabolite itself carries no status, the ontology inherits it.
+PREFIX pkg:  <http://example.org/pesticide-kg#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?form ?type ?activeSubstance ?status WHERE {
+  ?f pkg:hasDenominator ?d ; rdfs:label ?form ; a ?t .
+  VALUES ?t { pkg:Salt pkg:Ester pkg:Metabolite }
+  BIND(STRAFTER(STR(?t), "#") AS ?type)
+  ?d rdfs:label ?activeSubstance ; pkg:approvalStatus ?status .
+  FILTER (?status != "Approved")
+}

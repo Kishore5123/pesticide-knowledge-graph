@@ -1,0 +1,13 @@
+# Q2. A lab detected CAS 1066-51-9: which active substance is it, is it approved, what are its limits?
+# Proves: an analytical finding is linked to the regulatory view through the denominator.
+PREFIX pkg:  <http://example.org/pesticide-kg#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?detected ?formType ?activeSubstance ?status ?adi ?arfd ?expiry WHERE {
+  ?f pkg:casNumber "1066-51-9" ; rdfs:label ?detected ; a ?t ; pkg:hasDenominator ?d .
+  VALUES ?t { pkg:ActiveSubstance pkg:Salt pkg:Ester pkg:Metabolite }
+  BIND(STRAFTER(STR(?t), "#") AS ?formType)
+  ?d rdfs:label ?activeSubstance ; pkg:approvalStatus ?status .
+  OPTIONAL { ?d pkg:adi ?adi }
+  OPTIONAL { ?d pkg:arfd ?arfd }
+  OPTIONAL { ?d pkg:expiryDate ?expiry }
+}

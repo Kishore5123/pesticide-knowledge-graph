@@ -1,0 +1,13 @@
+# Q1. Show every chemical form of one active substance (salts, esters, metabolites).
+# Proves: the denominator groups related forms under one reference compound.
+PREFIX pkg:  <http://example.org/pesticide-kg#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?form ?type ?cas ?inchikey WHERE {
+  ?f pkg:hasDenominator ?d ; rdfs:label ?form ; a ?t .
+  ?d rdfs:label "MCPA" .
+  VALUES ?t { pkg:ActiveSubstance pkg:Salt pkg:Ester pkg:Metabolite }
+  BIND(STRAFTER(STR(?t), "#") AS ?type)
+  OPTIONAL { ?f pkg:casNumber ?cas }
+  OPTIONAL { ?f pkg:inchiKey ?inchikey }
+}
+ORDER BY ?type

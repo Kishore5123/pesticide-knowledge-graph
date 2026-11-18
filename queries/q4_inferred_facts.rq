@@ -1,0 +1,17 @@
+# Q4. Facts about each chemical form (type + denominator).
+# 04_query.py runs this on the asserted AND the inferred graph and shows only the
+# rows that exist after reasoning, i.e. what the reasoner added.
+PREFIX pkg:  <http://example.org/pesticide-kg#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?form ?fact ?value WHERE {
+  ?f rdfs:label ?form .
+  {
+    ?f a ?c . VALUES ?c { pkg:Salt pkg:Ester pkg:Metabolite }
+    BIND("is a" AS ?fact) BIND(STRAFTER(STR(?c), "#") AS ?value)
+  } UNION {
+    ?f pkg:hasDenominator ?d . ?d rdfs:label ?value .
+    FILTER (?f != ?d)
+    BIND("hasDenominator" AS ?fact)
+  }
+}
+ORDER BY ?form ?fact

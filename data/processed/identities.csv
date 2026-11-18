@@ -1,0 +1,7 @@
+id,name,cas,is_primary_form,CID,Title,IUPACName,InChIKey,MolecularFormula,MolecularWeight
+394,"2,4-D",94-75-7,True,1486,"(2,4-Dichlorophenoxy)Acetic Acid","2-(2,4-dichlorophenoxy)acetic acid",OVSKIKFHRZPJSS-UHFFFAOYSA-N,C8H6Cl2O3,221.03
+505,Captan,133-06-2,True,8606,Captan,"2-(trichloromethylsulfanyl)-3a,4,7,7a-tetrahydroisoindole-1,3-dione",LDVVMCZRFWMZSG-UHFFFAOYSA-N,C9H8Cl3NO2S,300.6
+548,Chlorpyrifos,2921-88-2,True,2730,Chlorpyrifos,"diethoxy-sulfanylidene-[(3,5,6-trichloro-2-pyridinyl)oxy]-lambda5-phosphane",SBPBAQFWLVIOKP-UHFFFAOYSA-N,C9H11Cl3NO3PS,350.6
+811,Glyphosate,1071-83-6,True,3496,Glyphosate,2-(phosphonomethylamino)acetic acid,XDDAORKBJWWYJS-UHFFFAOYSA-N,C3H8NO5P,169.07
+1324,MCPA,94-74-6,True,7204,(4-chloro-2-Methylphenoxy)acetic acid,2-(4-chloro-2-methylphenoxy)acetic acid,WHKUVVPPKQRRBV-UHFFFAOYSA-N,C9H9ClO3,200.62
+1324,MCPA,25319-90-8,False,32876,MCPA-thioethyl,S-ethyl 2-(4-chloro-2-methylphenoxy)ethanethioate,AZFKQCNGMSSWDS-UHFFFAOYSA-N,C11H13ClO2S,244.74

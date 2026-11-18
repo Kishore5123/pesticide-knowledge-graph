@@ -1,0 +1,6 @@
+form_name,form_cas,relation,parent_name,parent_cas,source
+MCPA-thioethyl,25319-90-8,isEsterOf,MCPA,94-74-6,"EU database remark lists both CAS numbers; PubChem: S-ethyl thioester of MCPA"
+AMPA,1066-51-9,isMetaboliteOf,Glyphosate,1071-83-6,"Main soil and plant metabolite of glyphosate"
+"TCP (3,5,6-trichloro-2-pyridinol)",6515-38-4,isMetaboliteOf,Chlorpyrifos,2921-88-2,"Hydrolysis product of chlorpyrifos"
+THPI (tetrahydrophthalimide),85-40-5,isMetaboliteOf,Captan,133-06-2,"Main degradation product of captan"
+"2,4-D dimethylamine salt",2008-39-1,isSaltOf,"2,4-D",94-75-7,"Common salt form of 2,4-D"
